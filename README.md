@@ -1,6 +1,8 @@
-**Version: MassTransit 7.1.0**
+**Version: Automatonymous 5.1.4-develop.12**
 
-Output (**wrong**):
+https://github.com/MassTransit/Automatonymous/commit/b50e86fe197bbc1cc4b16c3e19d275bde869d160
+
+Output (**correct**):
 
 ```
           StateChanged:  -> Initial (State)
@@ -24,10 +26,12 @@ Enter s1 (s1.Enter (Event)).
                     PreExecute: ToSub (Event)
 Leave s1 (s1.Leave (Event)).
           StateChanged: s1 (State) -> s21 (State)
+Enter s21 (s2.Enter (Event)).
 Enter s21 (s21.Enter (Event)).
                     PostExecute: ToSub (Event)
                     PreExecute: Quit (Event)
 Leave s21 (s21.Leave (Event)).
+Leave s21 (s2.Leave (Event)).
           StateChanged: s21 (State) -> Final (State)
 Enter Final (Final.Enter (Event)).
 We're done.
